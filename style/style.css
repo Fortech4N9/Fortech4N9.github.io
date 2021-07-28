@@ -1,0 +1,1106 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin: 0;
+    line-height: 1.6; 
+    background-color: #F0F5FA;
+}
+
+
+img{
+    max-width: 100%;
+    /* object-position: center; */
+    object-fit: scale-down;
+    height: fit-content;
+}
+
+/* container */
+.container{
+    width: 80%;
+    max-width: 1536px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    position: fixed;
+    z-index: 999;
+    transition: transform 0.5s ease;
+    width: 80%;
+    top: 0;
+}
+.header-content{
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    height: max-content;
+    background-color:#ffffff;
+    border-radius: 0 0 15px 15px;
+}
+
+.header.header__hide {
+    transform: translateY(-300%);
+}
+
+.header-img{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.header-menu{
+    margin: auto;
+}
+
+.header-btn{
+    text-decoration: none;
+    cursor: pointer;
+    color: #2C2C2C;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    margin: auto 30px;
+    position: relative;
+}
+
+.header-button{
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    color: #007AA9;
+    background-color: rgba(0, 122, 169, 0.15);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buton-text{
+    margin: 10px  20px;
+    text-align: center;
+    align-items: center;
+}
+
+.header-btn:hover{
+    color: #007AA9;
+}
+
+.header-btn:hover::after {
+    width: 100%;
+}
+
+.header-btn:after {
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    z-index: 1;
+    background-color: #007AA9;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+.header-button:hover{
+    background-color: #007AA9;
+    box-shadow: 0 0 10px #007AA9;
+    color: #ffffff;
+    text-shadow: -1px 0 white;
+}
+.nav__btn {
+    cursor: pointer;
+    margin-left: 20px;
+    display: none;
+}
+/* logo */
+.logo{
+    margin: auto;
+}
+.logo-content{
+    display: flex;
+    margin: 210px auto;
+}
+
+.logo-text{
+    text-align: center;
+}
+
+.logo-title{
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.logo-suptitle{
+    font-size: 40px;
+    margin: 40px 170px;
+}
+
+.logo-intotitle{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.button{
+    width: 300px;
+    height: 60px;
+    font-size: 36px;
+    color: #007AA9;
+    font-weight: lighter;
+    border-radius: 20px;
+    background-color:rgba(0, 122, 169, 0.15);
+    margin: 40px auto;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s ease, background-color .1s ease, border-color .1s ease, color .1s ease;
+}
+
+.button:hover{
+    transform: translateY(15px);
+    background-color: #2e363e;
+}
+
+ .logo-img{
+    max-width: 100%;
+    padding: 30% 0;
+} 
+
+/* about */
+.about{
+    background-color: #ffffff;
+}
+
+.about-content{
+    display: flex;
+}
+
+.about-img{
+    margin: auto;
+
+}
+
+.about-text{
+    margin: 60px 30px;
+}
+.about-title{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px;
+    padding-left: 30px;
+}
+
+.about-sup{
+    margin: 10px;
+    font-size: 24px;
+    text-indent: 30px;
+}
+
+
+/* team */
+
+.team-content{
+    padding: 80px 0;
+}
+
+.team-title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.team-text{
+    font-size: 24px;
+    text-indent: 5%;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.team-cards{
+    display: flex;
+    gap: 25px;
+  justify-content: center;
+}
+
+.team-item{
+    width:calc((80%-25px)/4);
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    margin-top: 30px;
+}
+
+.team-img{
+    display: block;
+    height: 250px;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 60px;
+}
+
+
+.team-name{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: auto 20px;
+}
+
+.team-status{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* work */
+.work{
+    background-image: url(../img/work/Slide\ Деятельность.svg);
+    max-height: max-content;
+}
+
+.work-content{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 2em;
+}
+
+.work-content.plus{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 70%;
+    margin: auto;
+
+}
+.work-item{
+    display: flex;
+    text-align: left;
+    padding: 40px 0;
+}
+
+/* .work-img{
+
+} */
+
+.work-text{
+    font-size: 24px;
+    color: #ffffff;
+    margin:auto 20px;
+    font-weight: lighter;
+}
+
+
+/* video */
+.video{
+    background-image: url(../img/video/Slide\ Видео.png);
+}
+
+.video-zone{
+    padding: 50px 0;
+}
+.video-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.video-content{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  
+}
+.video-item{
+    border-radius: 40px; 
+    border: 10px solid white;
+}
+ iframe{
+    max-width: 100%;
+    max-height: 100%;
+} 
+/* questions */
+.questions{
+    margin: 80px auto;
+}
+
+.questions-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+.questions-content{
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-gap: 2em;
+}
+
+.question-item{
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all .7s ease;
+    max-height: 100%;
+}
+
+
+.question-item:last-child {
+    margin-bottom: 0;
+}
+
+.question-header{
+    display: grid;
+    grid-template-columns: 3% 97%;
+}
+
+.question-status{
+    margin: auto;
+    transition: all .7s ease;
+}
+
+.question-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.question-content{
+    display: grid;
+    grid-template-columns: 3% 97%;
+    overflow: hidden;
+    transition: all .7s ease;
+    max-height: 0;
+    font-size: 0px;
+}
+
+.palka-question{
+    height: 80%;
+    width: 2px;
+    background-color: #2C2C2C;
+    margin: auto;
+}
+
+.text-question{
+    font-size: 24px;
+    text-indent: 2%;
+}
+
+
+
+
+.question-item.active .question-status {
+    transform: rotate(45deg);
+}
+
+.question-item.active .question-content {
+    max-height: 20em;
+    font-size: 24px;
+}
+
+/* curse */
+
+.curse{
+    background-image: url(../img/curse/Slide\ Background.png);
+}
+
+.curse-zone{
+    padding: 50px 0;
+}
+
+.curse-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+.curse-content{
+    display:flex;
+    column-gap: 25px;
+    margin-bottom: 25px;
+  
+}
+.curse-card{
+    width: calc((100%-25px)/2);
+    height: auto;
+    border-radius: 40px;
+    background-color: rgba(228, 242, 255, 1);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    box-shadow: 4px 4px 20px 10px rgba(240, 240, 250, 1);
+}
+
+.card-logo{
+    margin: auto;
+}
+
+.card-title{
+    margin: 20px 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-text{
+    text-indent: 5%;
+    margin: 10px 30px ;
+    font-size: 20px;
+}
+
+.card-more{
+    margin: 15px 20px;
+    text-align: right;
+}
+
+.card-btn{
+    margin: auto 20px;
+    text-decoration: none;
+    color: #0277BD;
+    font-size: 24px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* .card-btn:hover{
+   padding-bottom:10px  ;
+} */
+
+.card-btn:hover::after {
+    width: 100%;
+}
+
+.card-btn:after {
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 20%;
+    transform: translateX(-20%);
+    width: 0%;
+    height: 3px;
+    z-index: 1;
+    background-color: grey;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+.card-button{
+    font-size: 24px;
+    border-radius: 11px;
+    border: none;
+    background-color: rgba(2, 119, 189, 0.15);
+    color:#0277BD;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 550;
+    position: relative;
+}
+
+.card-button::before{
+    content:''; /* Обязательное свойство псевдоэлемента :before */
+    position: absolute; /* Позиционируем абсолютно */
+    top: 0px; /* Позиция по границам блока */
+    left: 0px;
+    width: 100%; /* Ширина по границам кнопки */
+    height: 0px; /* Высота 0, поэтому невиден */
+    background: rgba(39, 135, 245, 0.15); /* Фоновый цвет наплывания */
+    border-radius: 11px; /* Радиус уголков */
+    transition: all 0.5s ease-out; /* Анимация. Движение. Трансформируются все свойства (all) в течении 0.5 секунды, быстро начинается и к концу замедляется (ease-out) */
+}
+
+.card-button:hover:before { /* При наведении */
+    height: 100%; /* Высота наплывания становится равной высоте кнопки */
+    }
+
+
+/* location */
+.location{
+    background-color: #ffffff;
+}
+
+.location-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 100px 0;  
+}
+
+.location-img{
+    margin: auto;
+    border-radius: 30px;
+}
+
+.location-text{
+    margin: 40px 60px;
+}
+
+.location-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.location-data{
+    margin: 30px auto;
+    font-size: 20px;
+}
+
+.location-data.plus{
+    margin:0px auto;
+}
+
+.location-web{
+ display: flex;
+  gap: 1em;
+}
+
+.location-button{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-radius: 20px;
+    border: #ffffff;
+    cursor: pointer;
+    background-color: rgba(39, 135, 245, 0.15);
+    transition: all 0.7s ease;
+    max-width: 100%;
+    max-height: max-content;
+}
+
+.btn-img{
+    margin: auto;
+}
+
+.btn-text{
+    text-align: left;
+    font-size: 20px;
+    color: #2787F5;
+    padding:  0 10px;
+
+}
+
+
+.location-button:hover{
+    transform: translateY(15px);
+    background-color: #2e363e;
+}
+
+.btn-text:hover{
+    color: #ffffff;
+}
+.btn-img:hover{
+   color: #ffffff;
+}
+/* footer */
+
+.footer{
+    background-color: #2C2C2C;
+    height: 100%;
+    top: auto;
+}
+
+.footer-text{
+    color: #ffffff;
+    text-align:center;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    height: fit-content;
+}
+
+@media(max-width:1600px){
+    .container{
+        max-width: 1200px;
+    }
+    /* header */
+
+    .header-content{
+        grid-template-columns: 15% 70% 15%;
+    }
+    
+    .header-menu{
+        font-size: 14px;
+    }
+
+    .header-btn{
+        margin: auto 10px;
+    }
+
+    .header-button{
+        font-size: 16px;
+        margin: auto 10px;
+    }
+
+    /* logo */
+    .logo-title{
+        font-size: 48px;
+    }
+
+    .logo-suptitle{
+        font-size: 34px;
+        margin: 40px 170px;
+    }
+    
+    .logo-intotitle{
+        font-size: 34px;
+        font-weight: bolder;
+    }
+
+    .button{
+        font-size: 34px;
+    }
+    .logo-img{
+      max-width: 100%;
+    }
+
+    /* about */
+    .about{
+        background-color: #ffffff;
+    }
+    
+    .about-content{
+        display: flex;
+    }
+    
+    .about-title{
+        font-weight: bold;
+        font-size: 34px;
+        margin: 10px;
+        padding-left: 30px;
+    }
+    
+    .about-sup{
+        font-size: 18px;
+    }
+
+    /* team */
+
+    .team-title{
+        font-size: 34px;
+    }
+
+    .team-text{
+        font-size: 18px;
+    }
+
+    .team-name{
+        font-size: 18px;
+    }
+    .team-status{
+    font-size: 14px;
+    }
+
+    .team-img{
+        padding: 0;
+    }
+/* work */
+    .work-text{
+        font-size: 18px;
+    }
+
+
+/* curse */
+
+    .curse-title{
+        font-size: 34px;
+    }
+    
+    .card-title{
+        font-size: 18px;
+    }
+
+    .card-text{
+        font-size: 18px;
+    }
+
+    .card-btn{
+        font-size: 18px;
+    }
+
+    .card-button{
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+
+    /* video */
+
+    .video-title{
+        font-size: 34px;
+    }
+
+    .video-card{
+        max-height: 10%;
+    }
+
+    /* questions */
+    .questions-title{
+        font-size: 34px;
+    }
+
+    .question-title{
+        font-size: 18px;
+    }
+
+    .text-question{
+        font-size: 18px;
+    }
+
+   /* location */
+
+   .location-title{
+       font-size: 34px;
+   }
+
+   .location-data{
+       font-size: 18px;
+   }
+
+   .btn-text{
+       font-size: 14px;
+   }
+
+   /* footer */
+   .footer-text{
+       font-size: 18px;
+   }
+}
+
+
+@media(max-width:1240px){
+    .logo-img{
+        display: none;
+    }
+
+    .about-img{
+        display: none;
+    }
+
+    .team-name{
+        font-size: 14px;
+        margin-top: -25%;
+    }
+
+    .team-status{
+        font-size: 12px;
+    }
+
+
+    .work-text{
+        font-size: 14px;
+    }
+
+    .card-title{
+        font-size: 14px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+    .card-btn{
+        font-size: 14px;
+    }
+
+    .card-button{
+        font-size: 14px;
+    }
+
+    .video-content{
+        display: block;
+        text-align: center;
+    }
+    .video-item{
+    margin-bottom: 25px;
+     
+    }
+    .question-title{
+        font-size: 14px;
+    }
+    .text-question{
+        font-size: 14px;
+    }
+
+    .location-data{
+        font-size: 14px;
+    }
+
+    .btn-text{
+        font-size: 8px;
+    }
+
+    .footer-text{
+        font-size: 14px;
+    }
+
+    .location-content{
+        display: block;
+    }
+    .work-content{
+        grid-gap: 0;
+        padding: 10px;
+    }
+    .work-item{
+        padding: 0;
+    }
+
+    .team-img{
+        margin-top: -10%;
+    }
+
+}
+
+@media(max-width:940px){
+    .header-content{
+        grid-template-columns: 60% 20% 20%;
+        align-items: center;
+    }
+    .header-btn{
+        display: none;
+    }
+
+    /* .team-cards{
+
+    } */
+
+
+    .card-text{
+        display: none;
+    }
+    .card-title{
+        margin:  10px;
+    }
+
+    /* .card-more{
+        display: flex;
+    } */
+
+    .card-btn{
+        font-size: 12px;
+        margin: auto;
+    }
+    .card-button{
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .work-text{
+        font-size: 12px;
+    }
+
+    .team-img{
+        margin-top: -20%;
+    }
+
+    .team-name{
+        font-size: 11px;
+        margin-top: -20%;
+    }
+}
+
+@media(max-width:760px){
+    .logo-title{
+        font-size: 34px;
+    }
+    
+    .logo-suptitle{
+        font-size: 24px;
+        margin: 20px auto;
+    }
+
+    .logo-intotitle{
+        font-size: 24px;
+    }
+
+    .button{
+        font-size: 24px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .about-title{
+        font-size: 24px;
+    }
+
+    .about-sup{
+        font-size: 14px;
+    }
+
+    .team-title{
+        font-size: 24px;
+    }
+
+    .team-text{
+        font-size: 14px;
+    }
+
+    .work-img{
+        display: none;
+    }
+
+
+    .work-text{
+        font-size: 10px;
+    }
+
+    .team{
+        display: none;
+    }
+    .work-content.plus{
+        gap: 0;
+    }
+
+    .curse-content{
+        display: block;
+        margin: auto;
+    }
+    .curse-card{
+        width: calc(100%);
+        margin: 20px auto;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+
+    .card-text{
+        display: block;
+        font-size: 18px;
+    }
+
+    .card-btn{
+        font-size: 18px;
+    }
+
+    .card-button{
+        font-size: 18px;
+        margin: auto 10px;
+    }
+
+    .questions-content{
+        display: block;
+    }
+    .question-img{
+        display: none;
+    }
+
+    .question-title{
+        font-size: 18px;
+    }
+
+    .text-question{
+        font-size: 18px;
+    }
+
+    .header-content{
+        grid-template-columns: 60% 10% 30%;
+    }
+    .video-item{
+        height: 220px;
+    }
+
+    .location-img{
+        height: 250px;
+    }
+}
+
+
+
+@media(max-width:490px){
+    .header-content{
+        grid-template-columns: 40% 10% 50%;
+    }
+
+    .header-button{
+        font-size: 10px;
+        padding: 0;
+        margin:0 auto;
+    }
+
+    .header-img{
+        margin: 0 10px;
+    }
+    .logo-title{
+        font-size: 20px;
+    }
+
+    .logo-suptitle{
+        font-size: 16px;
+    }
+
+    .logo-intotitle{
+        font-size: 16px;
+    }
+
+    .button{
+        font-size: 16px;
+    }
+
+    .about-title{
+        font-size: 12px;
+    }
+
+    .about-sup{
+        font-size: 6px;
+    }
+
+    .work-text{
+        font-size: 6px;
+    }
+
+    .work-content.plus{
+        margin: auto;
+    }
+
+    .card-title{
+        font-size: 12px;
+    }
+
+    .card-text{
+        font-size: 10px;
+    }
+
+    .card-btn{
+        font-size: 8px;
+    }
+
+    .card-button{
+        font-size: 8px;
+        margin: auto;
+    }
+    .curse-title{
+        font-size: 12px;
+    }
+    .video-title{
+        font-size: 12px;
+    }
+
+    .questions-title{
+        font-size: 12px;
+    }
+
+    .question-title{
+        font-size: 10px;
+    }
+
+    .text-question{
+        font-size: 10px;
+    }
+
+    .location-title{
+        font-size: 12px;
+    }
+
+    .location-data{
+        font-size: 10px;
+    }
+    .location-text{
+        margin:  10px auto;
+    }
+
+    .video-item{
+        height: 180px;
+    }
+
+    .location-img{
+        height: 200px;
+    }
+}
