@@ -50,7 +50,7 @@ window.addEventListener('scroll', function () {
     lastScroll = scrollPos();
 })
 
-
+// спойлеры
 const spoilers = document.querySelectorAll('.question-item');
 for (item of spoilers) {
     item.addEventListener('click', function () {
@@ -66,4 +66,32 @@ for (item of spoilers) {
     })
 }
 
+//модальные окна 
+const btns = document.querySelectorAll('.header-button');
+const modalOverlay = document.querySelector('.modals-overlay');
+const modals = document.querySelectorAll('.popap-enterence');
+const back = document.querySelector('.back')
 
+btns.forEach((el) => {
+	el.addEventListener('click', (e) => {
+		let path = e.currentTarget.getAttribute('data-path');
+
+		modals.forEach((el) => {
+			el.classList.remove('popap-enterence--visible');
+		});
+
+		document.querySelector(`[data-target="${path}"]`).classList.add('popap-enterence--visible');
+		modalOverlay.classList.add('modals-overlay--visible');
+	});
+});
+
+back.addEventListener('click', (e) => {
+	console.log(e.target);
+
+	if (e.target == back) {
+		modalOverlay.classList.remove('modals-overlay--visible');
+		modals.forEach((el) => {
+			el.classList.remove('popap-enterence--visible');
+		});
+	}
+});

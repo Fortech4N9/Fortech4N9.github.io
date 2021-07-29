@@ -23,13 +23,45 @@
                     <a href="#hid5" class="header-btn">контакты</a>
                     <a href="#hid6" class="header-btn">FAQ</a>
                 </div>
-                    <button class="header-button"><p class="buton-text">
+                    <button class="header-button" data-path="enterence"><p class="buton-text">
                         <span style="text-decoration: underline;">В</span>ход
                     </p>
                     </button>
             </div>
     </header>
 </div>
+
+<div class="modals">
+        <div class="modals-overlay">
+                <div class="popap-enterence" data-target="enterence">
+                    <div class="container">
+                        <div class="back">Закрыть</div>
+                    </div>
+                    <div class="enterence-img">
+                        <img src="img/header/Vector.svg" alt="">
+                    </div>
+                        <div class="enterence-content">
+                            <div class="enterence-input">
+                                <input class="input" type="text" placeholder="Почта/Телефон">
+                                <input class="input" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="enterence-button">
+                                <button class="enterence-btn">Создать аккаунт</button>
+                                <button class="enterence-btn bottom">Войти</button>
+                            </div>
+                            
+                        </div>
+                       
+                        <div class="enterance-bottom">
+                                <input class="galka" type="checkbox" name="a" id="Запомнить меня" >
+                                <p class="enterence-text">Запомнить меня</p>
+                                <a class="enterence-text right" href="#">Забыли пароль?</a>
+                            </div>
+                           
+                    </div>
+        </div>
+</div>
+
 
     <section id="hid0" class="logo">
         <div class="container">
@@ -388,9 +420,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bo.."
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
